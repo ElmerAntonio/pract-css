@@ -1,0 +1,31 @@
+header{
+  background-color: #b2b2b2;
+  display: block;
+  margin: 4% 2% 2% 2%;
+}
+
+h1{
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+a{
+  background-color: #c5c5c5;
+  color: #000000;
+}
+
+aside{
+  display: none;
+}
+
+.right{
+  background-color: #7f7f7f;
+  margin: 1% 2% 0 2%;
+}
+
+h2{
+  color: #101680;
+  text-transform:uppercase;
+
+}

@@ -1,31 +1,107 @@
-header{
-  background-color: #b2b2b2;
-  display: block;
-  margin: 4% 2% 2% 2%;
+body{
+  padding: 1%;
+  margin: 1%;
 }
 
+/*Configuracion de la cabecera en el fondo de pantalla, su margen y relleno*/
+header{
+  display: block;
+  background: #6ac17df0 url(../images/flywheel.jpg) no-repeat;
+  background-size: cover;
+  padding: 3%;
+}
+
+/*Configuracion del titulo para centrarlo y cambiarle el color de fuente*/
 h1{
   text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
+  color: #ffff;
+  margin-top: 0;
 }
 
-a{
-  background-color: #c5c5c5;
-  color: #000000;
+/*Navegador configurado y centrado con margin y su relleno correspondiente */
+nav a{
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  background-color: #ffffff80;
+  border-radius: 3px;
+  padding: 15px 60px;
+  margin-left: 9%;
+}
+
+/*Modelo de pantalla cuando va siendo reducida desde los 1250px a los 1116px*/
+@media screen and (max-width:1260px) {
+
+  nav a{
+
+    margin-left:8%;
+  }
+}
+
+@media screen and (max-width:1177px) {
+
+  nav a{
+
+    margin-left:7%;
+  }
+}
+
+@media screen and (max-width:1116px) {
+
+  nav a{
+
+    margin-left:5%;
+  }
+}
+
+/* Modelo de pantalla para el nav en pantalla de tamaño por debajo de los 1007px*/
+@media screen and (max-width:1007px) {
+
+  nav a{
+    margin-left:19%;
+  }
+
+  a[href="teams.html"]{
+    margin-left:22%;
+    margin-bottom: 1%;
+  }
+  a[href="index.html"]{
+    margin-left:19.5%;
+    margin-bottom: 1%;
+  }
+}
+
+/*Configuracion de enlace activo con la clase active*/
+.active{
+  background-color: #fff;
+  color: #0603bd;
+}
+
+/* Configuracion del curpo*/
+main{
+  display: flex;
+  width: 100%;
+  height: auto;
 }
 
 aside{
-  display: none;
+  width: 20%;
+  padding-bottom: 15%;
+  background-color: #777613;
 }
 
-.right{
-  background-color: #7f7f7f;
-  margin: 1% 2% 0 2%;
+section{
+  margin-top: 1%;
+  width: 80%;
 }
 
-h2{
-  color: #101680;
-  text-transform:uppercase;
 
+
+/*COnfiguraciond del tamaño de la imagen y centrado*/
+img{
+  border: solid 1px #000;
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 30px;
 }
