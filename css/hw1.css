@@ -95,13 +95,65 @@ section{
   width: 80%;
 }
 
-
-
 /*COnfiguraciond del tamaño de la imagen y centrado*/
 img{
-  border: solid 1px #000;
+  border: solid 3px #000;
   display: flex;
   width: 50%;
   margin: 0 auto;
   margin-top: 30px;
+}
+
+/*Configuracion de Tabla*/
+table{
+  width: 78%;
+  margin: auto;
+  font-family: sans-serif,fantasy,monospace;
+}
+/*fondo de las celdas inferiores*/
+tr{
+  background: #e4f5d4;
+  transition: padding: 1s, background:1s ;
+}
+/*relleno de las celdas*/
+th,td{
+  padding: 15px;
+}
+/*fondo degradado en la celdas de titulo , color de texto y configuracion del borde inferior y borde redondeado*/
+th{
+  background: -moz-linear-gradient(90deg, rgba(151,175,96,1) 0%, rgba(146,164,84,1) 28%, rgba(139,157,75,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(151,175,96,1) 0%, rgba(146,164,84,1) 28%, rgba(139,157,75,1) 100%);
+  background: linear-gradient(90deg, rgba(151,175,96,1) 0%, rgba(146,164,84,1) 28%, rgba(139,157,75,1) 100%);
+  color: #fff;
+  border-bottom: 4px solid #b1e053;
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  	border-radius: 5px 5px 0 0;
+}
+/*configuracion de la primera celda de titulo*/
+th:first-child{
+  text-align: left;
+}
+/*configuracion de opacidad y sombra de texto*/
+td{
+  opacity: 0.4;
+  text-shadow: 0 0 1px #848484;
+  font-weight: bold;
+}
+/*alineacion de las 2 ultimas filas*/
+td:last-child, td:nth-child(2){
+	text-align: center;
+}
+/*reaccion de las columnas al movimient del mouse*/
+tr:hover>td{
+  opacity: 0.9;
+  color: #000;
+}
+/* uso de tranciciones */
+tr{
+  transition-timing-function: linear;
+}
+tr:hover{
+  padding: 20px;
+  background: #beef90;
 }
